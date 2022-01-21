@@ -26,4 +26,41 @@
   font-size: 20px;
 }
 
+.image-car {
+  width: 100%;
+}
+
+.image-car img {
+  width: 100%;
+}
+
+.lorem {
+  background-color: #15ffbc;
+}
+
+.lorem {
+  display: flex;
+  text-transform: capitalize;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lorem-ipsum__amet {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 15px;
+}
+
+.equis {
+  font-weight: bold;
+  align-items: center;
+}
+
+.mustache {
+  width: 50px;
+  margin-top: 40px;
+}
+
 /*# sourceMappingURL=home.css.map */
