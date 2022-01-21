@@ -6,10 +6,13 @@
     list-style-type: none;
 }
 
+main {
+    background-color: #15ffbc;
+}
+
 .header {
     display: flex;
     background-color: #15ffbc;
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: space-between;
@@ -23,20 +26,25 @@
     margin: 20px;
     font-size: 20px;
 }
-.image-car {
+.images {
     width: 100%;
 }
 .image-car img {
     width: 100%;
 }
-.lorem {
-    background-color: #15ffbc;
+.images-mustache {
+    width: 50px;
+    margin-top: 40px;
 }
-.lorem {
+.lorem1 {
     display: flex;
-    text-transform: capitalize;
+    padding: 20px;
+    font-family: oswald;
+    letter-spacing: 5px;
+    text-transform: uppercase;
     flex-direction: column;
     align-items: center;
+    align-content: center;
 }
 .lorem-ipsum__amet {
     display: flex;
@@ -49,7 +57,27 @@
     font-weight: bold;
     align-items: center;
 }
-.mustache {
-    width: 50px;
-    margin-top: 40px;
+.lorem2-images {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    &__ipsum2 {
+        font-family: oswald;
+        letter-spacing: 5px;
+    }
+
+    &__dolor {
+        font-size: 10px;
+        letter-spacing: 3px;
+        text-decoration-line: underline;
+    }
+}
+.p-lorem {
+    display: flex;
+    font-family: oswald;
+    letter-spacing: 3px;
+    justify-content: center;
 }
