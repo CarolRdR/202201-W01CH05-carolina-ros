@@ -3,14 +3,27 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
+  list-style-type: none;
 }
 
 .header {
   display: flex;
   background-color: #15ffbc;
-}
-.header .tabs {
+  display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: space-evenly;
+}
+
+.burguer {
+  margin: 20px;
+  font-size: 30px;
+}
+
+.qui {
+  margin: 20px;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=home.css.map */
