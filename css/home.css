@@ -21,7 +21,7 @@
 }
 
 .size-logo {
-  width: 80px;
+  width: 120px;
 }
 
 .burguer {
@@ -29,12 +29,12 @@
   color: black;
 }
 
-main {
-  background-color: #15ffbc;
+.qui {
+  font-size: 20px;
 }
 
-.images {
-  width: 100%;
+main {
+  background-color: #15ffbc;
 }
 
 .main {
@@ -48,6 +48,10 @@ main {
 .images-mustache {
   width: 50px;
   margin-top: 40px;
+}
+
+.images {
+  width: 100%;
 }
 
 .lorem1 {
@@ -103,13 +107,30 @@ main {
   display: flex;
   background-color: black;
   color: white;
+  padding: 20px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
+.footer-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: space-between;
+  align-items: center;
+}
+
 .footer__header-title {
   color: #15ffbc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: space-between;
+}
+.footer__header-title--crossed {
+  text-decoration: line-through;
+  text-decoration-color: salmon;
 }
 
 .icon {
