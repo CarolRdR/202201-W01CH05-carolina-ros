@@ -19,7 +19,9 @@
     font-size: 30px;
     text-decoration: none;
 }
-
+.nav-desktop {
+    display: none;
+}
 .size-logo {
     width: 120px;
 }
@@ -182,6 +184,22 @@ video {
     width: 100%;
 }
 @media (min-width: 600px) {
+    .nav-desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+        gap: 20px;
+        padding: 20px;
+        font-family: oswald;
+        color: black;
+        letter-spacing: 5px;
+        background-color: #15ffbc;
+    }
+    .nav-mobile {
+        display: none;
+    }
     .main-video {
         display: flex;
     }
