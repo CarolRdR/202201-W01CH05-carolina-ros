@@ -92,13 +92,13 @@ video {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
 }
 .lorem2-words__ipsum2 {
   font-family: oswald;
   letter-spacing: 5px;
 }
 .lorem2-words__dolor {
+  margin: 20px;
   font-size: 10px;
   letter-spacing: 3px;
   text-decoration-line: underline;
@@ -215,6 +215,19 @@ video {
     background-color: #15ffbc;
   }
 
+  .nav-desktop:hover li {
+    cursor: pointer;
+    color: salmon;
+  }
+  .nav-desktop:hover li img {
+    cursor: default;
+  }
+
+  .lorem2-words__dolor:hover {
+    cursor: pointer;
+    color: salmon;
+  }
+
   .lorem3 {
     display: flex;
     flex-direction: row;
@@ -230,6 +243,20 @@ video {
   .footer .section-bottom {
     display: flex;
     flex-direction: row;
+  }
+  .footer .section-bottom--green:hover {
+    cursor: pointer;
+    color: salmon;
+  }
+
+  .footer__items1--green:hover {
+    cursor: pointer;
+    color: salmon;
+  }
+
+  .footer__items3--socialmedia {
+    cursor: pointer;
+    color: salmon;
   }
 
   .nav-mobile {
