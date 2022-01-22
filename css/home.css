@@ -86,7 +86,7 @@ video {
   align-items: center;
 }
 
-.lorem2-images {
+.lorem2-words {
   display: flex;
   text-transform: uppercase;
   justify-content: center;
@@ -94,11 +94,11 @@ video {
   flex-direction: column;
   padding: 20px;
 }
-.lorem2-images__ipsum2 {
+.lorem2-words__ipsum2 {
   font-family: oswald;
   letter-spacing: 5px;
 }
-.lorem2-images__dolor {
+.lorem2-words__dolor {
   font-size: 10px;
   letter-spacing: 3px;
   text-decoration-line: underline;
@@ -154,23 +154,33 @@ video {
   text-decoration-color: salmon;
 }
 
-.footer__items {
-  padding: 10px;
-}
-.footer__items--title {
+.footer__items1--title,
+.footer__items3--title {
   display: flex;
   justify-content: center;
   color: white;
   font-size: 15px;
   font-weight: normal;
 }
-.footer__items--green {
+.footer__items1--green,
+.footer__items3--green {
   display: flex;
   justify-content: center;
   color: #15ffbc;
   padding: 30px;
 }
-.footer__items--socialmedia {
+
+.footer__items2 {
+  padding: 10px;
+}
+.footer__items2--title {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 15px;
+  font-weight: normal;
+}
+.footer__items2--socialmedia {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -181,6 +191,7 @@ video {
   display: flex;
   width: 4rem;
   align-content: space-between;
+  flex-direction: column;
   padding: 10px;
 }
 
@@ -199,6 +210,22 @@ video {
     background-color: #15ffbc;
   }
 
+  .footer {
+    flex-direction: row;
+  }
+  .footer .footer__items1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lorem3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
   .nav-mobile {
     display: none;
   }
@@ -209,6 +236,10 @@ video {
   }
 
   .main-car--images {
+    display: none;
+  }
+
+  .footer-words {
     display: none;
   }
 }
