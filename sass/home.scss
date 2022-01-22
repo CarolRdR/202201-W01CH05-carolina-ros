@@ -100,24 +100,68 @@ main {
     align-items: center;
     flex-direction: column;
 }
-.footer-header {
+/*.footer-header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-content: space-between;
     align-items: center;
-}
+}*/
 .footer__header-title {
     color: #15ffbc;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-content: space-between;
+    font-weight: lighter;
+    font-family: oswald;
+    font-size: 20px;
+    letter-spacing: 5px;
+
     &--crossed {
         text-decoration: line-through;
         text-decoration-color: salmon;
     }
+    &--equis {
+        justify-content: center;
+        padding: 20px;
+    }
+}
+.footer-words {
+    color: white;
+    font-family: open-sans;
+    font-size: 20px;
+    &--velit {
+        color: salmon;
+        text-decoration: line-through;
+        text-decoration-color: salmon;
+    }
+}
+.footer__items {
+    padding: 10px;
+    &--title {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 15px;
+        font-weight: normal;
+    }
+    &--green {
+        display: flex;
+        justify-content: center;
+        color: #15ffbc;
+        padding: 30px;
+    }
+    &--socialmedia {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: space-between;
+    }
 }
 .icon {
-    width: 100px;
+    display: flex;
+    width: 4rem;
+    align-content: space-between;
+    padding: 10px;
 }
