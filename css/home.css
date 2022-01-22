@@ -112,7 +112,6 @@ video {
 }
 
 .footer {
-  display: flex;
   background-color: black;
   color: white;
   padding: 20px;
@@ -212,6 +211,9 @@ video {
 
   .footer {
     flex-direction: row;
+  }
+  .footer .footer-header {
+    display: none;
   }
   .footer .footer__items1 {
     display: flex;
