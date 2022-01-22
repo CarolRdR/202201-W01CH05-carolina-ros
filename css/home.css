@@ -30,7 +30,7 @@
 }
 
 .qui {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 main {
@@ -113,13 +113,6 @@ main {
   flex-direction: column;
 }
 
-/*.footer-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: space-between;
-    align-items: center;
-}*/
 .footer__header-title {
   color: #15ffbc;
   display: flex;
@@ -130,14 +123,16 @@ main {
   font-family: oswald;
   font-size: 20px;
   letter-spacing: 5px;
+  gap: 1rem;
 }
 .footer__header-title--crossed {
   text-decoration: line-through;
   text-decoration-color: salmon;
 }
 .footer__header-title--equis {
+  font-size: 10px;
   justify-content: center;
-  padding: 20px;
+  padding: 25px;
 }
 
 .footer-words {
