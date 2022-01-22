@@ -10,6 +10,7 @@ main {
     background-color: #15ffbc;
 }
 
+/*
 .header {
     display: flex;
     background-color: #15ffbc;
@@ -17,8 +18,20 @@ main {
     justify-content: space-between;
     align-content: space-between;
     align-items: space-evenly;
+}*/
+
+.nav-mobile {
+    display: flex;
+    background-color: #15ffbc;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-evenly;
+}
+.size-logo {
+    width: 80px;
 }
 .burguer {
+    display: flex;
     margin: 20px;
     font-size: 30px;
     text-decoration: none;
@@ -31,7 +44,10 @@ main {
 .images {
     width: 100%;
 }
-.image-car img {
+.main {
+    width: 100%;
+}
+.main-car--images {
     width: 100%;
 }
 .images-mustache {
@@ -84,6 +100,17 @@ main {
     justify-content: center;
 }
 .footer {
+    display: flex;
     background-color: black;
     color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer__header-title {
+    color: #15ffbc;
+}
+.icon {
+    width: 100px;
 }
