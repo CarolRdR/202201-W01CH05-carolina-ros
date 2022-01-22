@@ -106,32 +106,37 @@ video {
     align-items: center;
     flex-direction: column;
 }
-.footer__header-title {
+.footer__header {
     color: #15ffbc;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: space-between;
-    font-weight: lighter;
-    font-family: oswald;
-    font-size: 20px;
-    letter-spacing: 5px;
-    gap: 1rem;
-
-    &--crossed {
-        text-decoration: line-through;
-        text-decoration-color: salmon;
-    }
-    &--equis {
-        font-size: 10px;
+    .footer__header-title {
+        display: flex;
+        flex-direction: row;
         justify-content: center;
-        padding: 25px;
+        align-content: center;
+        align-items: center;
+        font-weight: lighter;
+        font-family: oswald;
+        font-size: 20px;
+        letter-spacing: 5px;
+        gap: 1rem;
+        &--crossed {
+            text-decoration: line-through;
+            text-decoration-color: salmon;
+        }
+        &--equis {
+            font-size: 10px;
+            justify-content: center;
+            padding: 25px;
+        }
     }
 }
 .footer-words {
     color: white;
     font-family: open-sans;
     font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
     &--velit {
         color: salmon;
         text-decoration: line-through;
@@ -139,26 +144,26 @@ video {
     }
 }
 .footer__items1,
-.footer__items3 {
+.footer__items2,
+.footer__items4,
+.footer__items5,
+.footer__items6 {
     &--title {
-        display: flex;
-        justify-content: center;
+        text-align: center;
         color: white;
         font-size: 15px;
         font-weight: normal;
     }
     &--green {
-        display: flex;
-        justify-content: center;
+        text-align: center;
         color: #15ffbc;
         padding: 30px;
     }
 }
-.footer__items2 {
+.footer__items3 {
     padding: 10px;
     &--title {
-        display: flex;
-        justify-content: center;
+        text-align: center;
         color: white;
         font-size: 15px;
         font-weight: normal;
@@ -171,10 +176,7 @@ video {
     }
 }
 .icon {
-    display: flex;
     width: 4rem;
-    align-content: space-between;
-    flex-direction: column;
     padding: 10px;
 }
 
@@ -192,23 +194,22 @@ video {
         letter-spacing: 5px;
         background-color: #15ffbc;
     }
-    .footer {
-        flex-direction: row;
-        .footer-header {
-            display: none;
-        }
-        .footer__items1 {
-            display: flex;
-            flex-direction: column;
-        }
-    }
-
     .lorem3 {
         display: flex;
         flex-direction: row;
         justify-content: center;
         text-align: center;
         padding-bottom: 20px;
+    }
+    .footer {
+        .footer-header {
+            display: none;
+            letter-spacing: none;
+        }
+        .section-bottom {
+            display: flex;
+            flex-direction: row;
+        }
     }
     .nav-mobile {
         display: none;
