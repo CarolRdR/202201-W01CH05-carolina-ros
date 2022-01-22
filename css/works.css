@@ -29,7 +29,7 @@
   color: black;
 }
 
-.qui {
+.officia {
   font-size: 15px;
 }
 
@@ -37,70 +37,27 @@ main {
   background-color: #15ffbc;
 }
 
-.main {
+.images-all {
+  width: 100%;
+  display: inline-block;
+}
+
+.images-all__block {
   width: 100%;
 }
 
-.main-car--images {
+.images-all__block img {
+  display: flex;
   width: 100%;
+  /*clip-path: polygon(0 31%, 100% 0%, 100% 69%, 0% 100%);*/
 }
 
-.images-mustache {
-  width: 50px;
-  margin-top: 40px;
-}
-
-.images {
+.black-corner {
+  display: flex;
+  height: 15rem;
   width: 100%;
-}
-
-.lorem1 {
-  display: flex;
-  padding: 20px;
-  font-family: oswald;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-}
-
-.lorem-ipsum__amet {
-  display: flex;
-  text-align: center;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 15px;
-}
-
-.equis {
-  font-weight: bold;
-  align-items: center;
-}
-
-.lorem2-images {
-  display: flex;
-  text-transform: uppercase;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px;
-}
-.lorem2-images__ipsum2 {
-  font-family: oswald;
-  letter-spacing: 5px;
-}
-.lorem2-images__dolor {
-  font-size: 10px;
-  letter-spacing: 3px;
-  text-decoration-line: underline;
-}
-
-.p-lorem {
-  display: flex;
-  font-family: oswald;
-  letter-spacing: 3px;
-  justify-content: center;
+  background-color: black;
+  clip-path: polygon(100% 74%, 100% 100%, 0 100%, 0 100%);
 }
 
 .footer {
@@ -174,6 +131,15 @@ main {
   width: 4rem;
   align-content: space-between;
   padding: 10px;
+}
+
+@media (min-width: 600px) {
+  .images-all__block {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    padding: none;
+  }
 }
 
 /*# sourceMappingURL=works.css.map */
