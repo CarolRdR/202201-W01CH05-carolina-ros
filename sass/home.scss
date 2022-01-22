@@ -195,9 +195,23 @@ video {
         letter-spacing: 5px;
         background-color: #15ffbc;
     }
-    .nav-desktop:hover li {
-        cursor: pointer;
-        color: salmon;
+    .nav-desktop {
+        .home:hover {
+            cursor: pointer;
+            color: salmon;
+        }
+        .works:hover {
+            cursor: pointer;
+            color: salmon;
+        }
+        .about:hover {
+            cursor: pointer;
+            color: salmon;
+        }
+        .contacts:hover {
+            cursor: pointer;
+            color: salmon;
+        }
         img {
             cursor: default;
         }
@@ -223,20 +237,33 @@ video {
         .section-bottom {
             display: flex;
             flex-direction: row;
-            &--green:hover {
+            .footer__items1--green:hover {
+                cursor: pointer;
+                color: salmon;
+            }
+            .footer__items2--green:hover {
+                cursor: pointer;
+                color: salmon;
+            }
+            .footer__items3--socialmedia {
+                cursor: pointer;
+                color: salmon;
+            }
+            .footer__items4--green:hover {
+                cursor: pointer;
+                color: salmon;
+            }
+            .footer__items5--green:hover {
+                cursor: pointer;
+                color: salmon;
+            }
+            .footer__items6--green:hover {
                 cursor: pointer;
                 color: salmon;
             }
         }
     }
-    .footer__items1--green:hover {
-        cursor: pointer;
-        color: salmon;
-    }
-    .footer__items3--socialmedia {
-        cursor: pointer;
-        color: salmon;
-    }
+
     .nav-mobile {
         display: none;
     }
