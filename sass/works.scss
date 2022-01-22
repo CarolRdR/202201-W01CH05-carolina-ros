@@ -43,7 +43,6 @@ main {
 .images-all__block img {
     display: flex;
     width: 100%;
-    /*clip-path: polygon(0 31%, 100% 0%, 100% 69%, 0% 100%);*/
 }
 .black-corner {
     display: flex;
@@ -127,5 +126,7 @@ main {
         display: grid;
         width: 100%;
         grid-template-columns: auto auto auto;
+        height: calc(100vw);
+        clip-path: polygon(0 31%, 100% 0%, 100% 69%, 0% 100%);
     }
 }
