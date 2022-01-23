@@ -38,7 +38,7 @@
 }
 
 main {
-  background-color: black;
+  background-color: #15ffbc;
 }
 
 .images-all {
@@ -48,6 +48,7 @@ main {
 
 .images-all__block {
   width: 100%;
+  clip-path: polygon(0 31%, 100% 0%, 100% 69%, 0% 100%);
 }
 
 .images-all__block img {
@@ -181,6 +182,7 @@ main {
     display: grid;
     width: 100%;
     grid-template-columns: auto auto auto;
+    clip-path: polygon(0 31%, 100% 0%, 100% 69%, 0% 100%);
     /*clip-path: polygon(0 31%, 100% 0%, 100% 69%, 0% 100%);*/
   }
   .images-all__block > img {

@@ -305,6 +305,8 @@ video {
     .main-video {
         display: flex;
         width: 100%;
+
+        clip-path: polygon(0 31%, 100% 0%, 100% 69%, 0% 100%);
     }
     .main-car--images {
         display: none;
