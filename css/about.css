@@ -45,8 +45,16 @@ main {
   width: 100%;
 }
 
-main-img {
+.main-img {
   display: none;
+}
+
+.main-title {
+  display: flex;
+}
+.main-title--equis {
+  font-weight: bold;
+  align-items: center;
 }
 
 .paragraphs {
@@ -58,11 +66,6 @@ main-img {
   flex-direction: column;
   align-items: center;
   align-content: center;
-}
-
-.equis {
-  font-weight: bold;
-  align-items: center;
 }
 
 .footer {
@@ -187,17 +190,12 @@ main-img {
     cursor: default;
   }
 
-  .lorem2-words__dolor:hover {
-    cursor: pointer;
-    color: salmon;
-  }
-
-  .lorem3 {
+  .main-img {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 20px;
+    width: 100%;
+  }
+  .main-img__pink {
+    width: 100%;
   }
 
   .footer .footer-header {
@@ -236,15 +234,6 @@ main-img {
   }
 
   .nav-mobile {
-    display: none;
-  }
-
-  .main-img {
-    display: flex;
-    width: 100%;
-  }
-
-  .main-img--pink {
     display: none;
   }
 
