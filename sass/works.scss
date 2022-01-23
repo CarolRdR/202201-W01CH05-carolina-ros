@@ -20,6 +20,9 @@
         text-decoration: none;
     }
 }
+.nav-desktop {
+    display: none;
+}
 .size-logo {
     width: 120px;
 }
@@ -122,6 +125,40 @@ main {
 }
 
 @media (min-width: 600px) {
+    .nav-desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+        gap: 20px;
+        padding: 20px;
+        font-family: oswald;
+        color: black;
+        letter-spacing: 5px;
+        background-color: #15ffbc;
+    }
+    .nav-desktop {
+        .home:hover {
+            cursor: pointer;
+            color: salmon;
+        }
+        .works:hover {
+            cursor: pointer;
+            color: salmon;
+        }
+        .about:hover {
+            cursor: pointer;
+            color: salmon;
+        }
+        .contacts:hover {
+            cursor: pointer;
+            color: salmon;
+        }
+        img {
+            cursor: default;
+        }
+    }
     .images-all__block {
         display: grid;
         width: 100%;
