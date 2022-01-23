@@ -58,6 +58,8 @@ main {
 }
 .main-title__dolor {
   padding: 25px;
+  font-weight: lighter;
+  font-size: 1.3rem;
 }
 .main-title--equis {
   font-weight: bold;
@@ -68,9 +70,14 @@ main {
   padding-bottom: 25px;
   font-family: oswald;
   letter-spacing: 0.2rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
 }
 .paragraphs .paragraphs-title {
   margin-top: 8rem;
+  margin-bottom: 1.3rem;
+  font-weight: lighter;
+  font-size: 1.4rem;
 }
 
 .footer {
@@ -201,6 +208,24 @@ main {
   }
   .main-img__pink {
     width: 100%;
+    height: 50vw;
+  }
+
+  .main-title > p {
+    display: inline;
+    justify-content: center;
+  }
+
+  .paragraphs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    padding: 20px;
+  }
+  .paragraphs .paragraphs > p {
+    padding: 20px;
+    margin: 20px;
   }
 
   .footer .footer-header {
