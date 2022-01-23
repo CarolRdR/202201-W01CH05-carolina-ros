@@ -208,9 +208,8 @@ main {
         justify-content: center;
         align-content: space-between;
         padding: 20px;
-        .paragraphs > p {
-            padding: 20px;
-            margin: 20px;
+        & > div > p {
+            padding: 0 50px 0 50px;
         }
     }
     .footer {

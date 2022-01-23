@@ -223,9 +223,8 @@ main {
     align-content: space-between;
     padding: 20px;
   }
-  .paragraphs .paragraphs > p {
-    padding: 20px;
-    margin: 20px;
+  .paragraphs > div > p {
+    padding: 0 50px 0 50px;
   }
 
   .footer .footer-header {
