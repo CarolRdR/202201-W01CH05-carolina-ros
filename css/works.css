@@ -38,12 +38,11 @@
 }
 
 main {
-  background-color: black;
+  background-color: #15ffbc;
 }
 
 .images-all {
   width: 100%;
-  display: inline-block;
 }
 
 .images-all__block {
@@ -51,8 +50,11 @@ main {
 }
 
 .images-all__block img {
-  display: flex;
+  display: inline-block;
+  height: 70vw;
   width: 100%;
+  margin: none;
+  margin-bottom: none;
 }
 
 .footer {
@@ -181,7 +183,6 @@ main {
     display: grid;
     width: 100%;
     grid-template-columns: auto auto auto;
-    /*clip-path: polygon(0 31%, 100% 0%, 100% 69%, 0% 100%);*/
   }
   .images-all__block > img {
     height: 40vw;
