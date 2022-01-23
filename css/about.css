@@ -50,22 +50,27 @@ main {
 }
 
 .main-title {
-  display: flex;
+  text-align: center;
+  font-family: oswald;
+  letter-spacing: 0.3rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.main-title__dolor {
+  padding: 25px;
 }
 .main-title--equis {
   font-weight: bold;
   align-items: center;
 }
-
 .paragraphs {
-  display: flex;
-  padding: 20px;
+  text-align: center;
+  padding-bottom: 25px;
   font-family: oswald;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
+  letter-spacing: 0.2rem;
+}
+.paragraphs .paragraphs-title {
+  margin-top: 8rem;
 }
 
 .footer {
