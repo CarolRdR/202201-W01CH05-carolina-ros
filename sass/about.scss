@@ -212,6 +212,7 @@ main {
             padding: 0 50px 0 50px;
         }
     }
+
     .footer {
         .footer-header {
             display: none;
@@ -222,6 +223,18 @@ main {
             flex-direction: row;
             justify-content: center;
             align-content: space-between;
+            .footer__items1,
+            .footer__items2 {
+                text-align: start;
+            }
+            .footer__items3 {
+                margin-right: 1.5rem;
+            }
+            .footer__items4,
+            .footer__items5,
+            .footer__items6 {
+                text-align: end;
+            }
             .footer__items1--green:hover {
                 cursor: pointer;
                 color: salmon;

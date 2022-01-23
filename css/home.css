@@ -246,6 +246,12 @@ video {
     padding-bottom: 20px;
   }
 
+  .lorem3-images > img:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 70%;
+  }
+
   .footer .footer-header {
     display: none;
     letter-spacing: none;

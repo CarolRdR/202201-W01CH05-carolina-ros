@@ -237,6 +237,18 @@ main {
     justify-content: center;
     align-content: space-between;
   }
+  .footer .section-bottom .footer__items1,
+.footer .section-bottom .footer__items2 {
+    text-align: start;
+  }
+  .footer .section-bottom .footer__items3 {
+    margin-right: 1.5rem;
+  }
+  .footer .section-bottom .footer__items4,
+.footer .section-bottom .footer__items5,
+.footer .section-bottom .footer__items6 {
+    text-align: end;
+  }
   .footer .section-bottom .footer__items1--green:hover {
     cursor: pointer;
     color: salmon;
