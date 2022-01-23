@@ -30,7 +30,7 @@
     font-size: 2rem;
     color: black;
 }
-.qui {
+.in {
     font-size: 15px;
 }
 main {
@@ -39,65 +39,40 @@ main {
 .main {
     width: 100%;
 }
-.main-car--images {
-    width: 100%;
-}
-video {
+.main-img {
     display: none;
 }
-.images-mustache {
-    width: 50px;
-    margin-top: 40px;
-}
-.images {
-    width: 100%;
-}
-.lorem1 {
-    display: flex;
-    padding: 20px;
-    font-family: oswald;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-}
-.lorem-ipsum__amet {
-    display: flex;
+.main-title {
     text-align: center;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 15px;
-}
-.equis {
-    font-weight: bold;
-    align-items: center;
-}
-
-.lorem2-words {
-    display: flex;
-    text-transform: uppercase;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    &__ipsum2 {
-        font-family: oswald;
-        letter-spacing: 5px;
-    }
-
-    &__dolor {
-        margin: 20px;
-        font-size: 10px;
-        letter-spacing: 3px;
-        text-decoration-line: underline;
-    }
-}
-.p-lorem {
-    display: flex;
     font-family: oswald;
-    letter-spacing: 3px;
-    justify-content: center;
+    letter-spacing: 0.3rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    &__dolor {
+        padding: 25px;
+        font-weight: lighter;
+        font-size: 1.3rem;
+    }
+    &--equis {
+        font-weight: bold;
+        align-items: center;
+    }
+    .last-line {
+    }
+}
+.paragraphs {
+    text-align: center;
+    padding-bottom: 25px;
+    font-family: oswald;
+    letter-spacing: 0.2rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    .paragraphs-title {
+        margin-top: 8rem;
+        margin-bottom: 1.3rem;
+        font-weight: lighter;
+        font-size: 1.4rem;
+    }
 }
 .footer {
     background-color: black;
@@ -215,27 +190,29 @@ video {
             cursor: default;
         }
     }
-    .lorem2-words {
-        &__dolor:hover {
-            cursor: pointer;
-            color: salmon;
+    .main-img {
+        display: flex;
+        width: 100%;
+        &__pink {
+            width: 100%;
+            height: 50vw;
         }
     }
-    .lorem3 {
+    .main-title > p {
+        display: inline;
+        justify-content: center;
+    }
+    .paragraphs {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        text-align: center;
-        padding-bottom: 20px;
-    }
-    .lorem3-images {
-        & > img:hover {
-            cursor: pointer;
-            transition: 0.5s;
-            opacity: 70%;
-            transform: scale(1.1);
+        align-content: space-between;
+        padding: 20px;
+        & > div > p {
+            padding: 0 50px 0 50px;
         }
     }
+
     .footer {
         .footer-header {
             display: none;
@@ -286,13 +263,6 @@ video {
     }
 
     .nav-mobile {
-        display: none;
-    }
-    .main-video {
-        display: flex;
-        width: 100%;
-    }
-    .main-car--images {
         display: none;
     }
     .footer-words {
