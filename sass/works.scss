@@ -38,15 +38,16 @@ main {
 }
 .images-all {
     width: 100%;
-    display: inline-block;
 }
 .images-all__block {
     width: 100%;
-    clip-path: polygon(0 31%, 100% 0%, 100% 69%, 0% 100%);
 }
 .images-all__block img {
-    display: flex;
+    display: inline-block;
+    height: 70vw;
     width: 100%;
+    margin: none;
+    margin-bottom: none;
 }
 
 .footer {
@@ -165,15 +166,14 @@ main {
             cursor: default;
         }
     }
+
     .images-all__block {
         display: grid;
         width: 100%;
         grid-template-columns: auto auto auto;
-        clip-path: polygon(0 31%, 100% 0%, 100% 69%, 0% 100%);
         & > img {
             height: 40vw;
         }
-        /*clip-path: polygon(0 31%, 100% 0%, 100% 69%, 0% 100%);*/
     }
     .images-all__block {
         & > img:hover {
@@ -183,6 +183,7 @@ main {
             transform: scale(1.1);
         }
     }
+
     .nav-mobile {
         display: none;
     }
