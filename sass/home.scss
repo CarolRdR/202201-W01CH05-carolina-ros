@@ -20,6 +20,9 @@
         text-decoration: none;
     }
 }
+.nav-desktop {
+    display: none;
+}
 .size-logo {
     width: 120px;
 }
@@ -38,6 +41,9 @@ main {
 }
 .main-car--images {
     width: 100%;
+}
+video {
+    display: none;
 }
 .images-mustache {
     width: 50px;
@@ -67,19 +73,21 @@ main {
     font-weight: bold;
     align-items: center;
 }
-.lorem2-images {
+
+.lorem2-words {
     display: flex;
     text-transform: uppercase;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
+
     &__ipsum2 {
         font-family: oswald;
         letter-spacing: 5px;
     }
 
     &__dolor {
+        margin: 20px;
         font-size: 10px;
         letter-spacing: 3px;
         text-decoration-line: underline;
@@ -92,60 +100,73 @@ main {
     justify-content: center;
 }
 .footer {
-    display: flex;
     background-color: black;
     color: white;
     padding: 20px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.footer__header-title {
-    color: #15ffbc;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: space-between;
-    font-weight: lighter;
-    font-family: oswald;
-    font-size: 20px;
-    letter-spacing: 5px;
-    gap: 1rem;
 
-    &--crossed {
-        text-decoration: line-through;
-        text-decoration-color: salmon;
-    }
-    &--equis {
-        font-size: 10px;
+    align-items: center;
+}
+.footer__header {
+    color: #15ffbc;
+    .footer__header-title {
+        display: flex;
+        flex-direction: row;
         justify-content: center;
-        padding: 25px;
+        align-content: center;
+        align-items: center;
+        font-weight: lighter;
+        font-family: oswald;
+        font-size: 20px;
+        letter-spacing: 5px;
+        gap: 1rem;
+        &--crossed {
+            text-decoration: line-through;
+            text-decoration-color: salmon;
+        }
+        &--equis {
+            font-size: 10px;
+            justify-content: center;
+            padding: 25px;
+        }
     }
 }
 .footer-words {
     color: white;
     font-family: open-sans;
     font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
     &--velit {
         color: salmon;
         text-decoration: line-through;
         text-decoration-color: salmon;
     }
 }
-.footer__items {
-    padding: 10px;
+.footer__items1,
+.footer__items2,
+.footer__items4,
+.footer__items5,
+.footer__items6 {
     &--title {
-        display: flex;
-        justify-content: center;
+        text-align: center;
         color: white;
         font-size: 15px;
         font-weight: normal;
     }
     &--green {
-        display: flex;
-        justify-content: center;
+        text-align: center;
         color: #15ffbc;
         padding: 30px;
+    }
+}
+.footer__items3 {
+    padding: 10px;
+    &--title {
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        font-weight: normal;
     }
     &--socialmedia {
         display: flex;
@@ -155,8 +176,106 @@ main {
     }
 }
 .icon {
-    display: flex;
     width: 4rem;
-    align-content: space-between;
     padding: 10px;
+}
+
+@media (min-width: 600px) {
+    .nav-desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+        gap: 20px;
+        padding: 20px;
+        font-family: oswald;
+        color: black;
+        letter-spacing: 5px;
+        background-color: #15ffbc;
+    }
+    .nav-desktop {
+        .home:hover {
+            cursor: pointer;
+            color: salmon;
+        }
+        .works:hover {
+            cursor: pointer;
+            color: salmon;
+        }
+        .about:hover {
+            cursor: pointer;
+            color: salmon;
+        }
+        .contacts:hover {
+            cursor: pointer;
+            color: salmon;
+        }
+        img {
+            cursor: default;
+        }
+    }
+    .lorem2-words {
+        &__dolor:hover {
+            cursor: pointer;
+            color: salmon;
+        }
+    }
+    .lorem3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .footer {
+        .footer-header {
+            display: none;
+            letter-spacing: none;
+        }
+        .section-bottom {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: space-between;
+            .footer__items1--green:hover {
+                cursor: pointer;
+                color: salmon;
+            }
+            .footer__items2--green:hover {
+                cursor: pointer;
+                color: salmon;
+            }
+            .footer__items3--socialmedia {
+                cursor: pointer;
+                color: salmon;
+            }
+            .footer__items4--green:hover {
+                cursor: pointer;
+                color: salmon;
+            }
+            .footer__items5--green:hover {
+                cursor: pointer;
+                color: salmon;
+            }
+            .footer__items6--green:hover {
+                cursor: pointer;
+                color: salmon;
+            }
+        }
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+    .main-video {
+        display: flex;
+        width: 100%;
+    }
+    .main-car--images {
+        display: none;
+    }
+    .footer-words {
+        display: none;
+    }
 }

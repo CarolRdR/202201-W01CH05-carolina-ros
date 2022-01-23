@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.nav-mobile {
+  display: flex;
+  background-color: #15ffbc;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: space-evenly;
+}
+.nav-mobile__elm {
+  display: flex;
+  margin: 20px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.size-logo {
+  width: 120px;
+}
+
+.burguer {
+  font-size: 2rem;
+  color: black;
+}
+
+.officia {
+  font-size: 15px;
+}
+
+main {
+  background-color: #15ffbc;
+}
+
+.images-all {
+  width: 100%;
+  display: inline-block;
+}
+
+.images-all__block {
+  width: 100%;
+}
+
+.images-all__block img {
+  display: flex;
+  width: 100%;
+}
+
+.black-corner {
+  display: flex;
+  height: 15rem;
+  width: 100%;
+  background-color: black;
+  clip-path: polygon(100% 74%, 100% 100%, 0 100%, 0 100%);
+}
+
+.footer {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer__header-title {
+  color: #15ffbc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: space-between;
+  font-weight: lighter;
+  font-family: oswald;
+  font-size: 20px;
+  letter-spacing: 5px;
+  gap: 1rem;
+}
+.footer__header-title--crossed {
+  text-decoration: line-through;
+  text-decoration-color: salmon;
+}
+.footer__header-title--equis {
+  font-size: 10px;
+  justify-content: center;
+  padding: 25px;
+}
+
+.footer-words {
+  color: white;
+  font-family: open-sans;
+  font-size: 20px;
+}
+.footer-words--velit {
+  color: salmon;
+  text-decoration: line-through;
+  text-decoration-color: salmon;
+}
+
+.footer__items {
+  padding: 10px;
+}
+.footer__items--title {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 15px;
+  font-weight: normal;
+}
+.footer__items--green {
+  display: flex;
+  justify-content: center;
+  color: #15ffbc;
+  padding: 30px;
+}
+.footer__items--socialmedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.icon {
+  display: flex;
+  width: 4rem;
+  align-content: space-between;
+  padding: 10px;
+}
+
+@media (min-width: 600px) {
+  .images-all__block {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    height: 100vw;
+    clip-path: polygon(0 31%, 100% 0%, 100% 69%, 0% 100%);
+  }
+}
+
+/*# sourceMappingURL=works.css.map */
