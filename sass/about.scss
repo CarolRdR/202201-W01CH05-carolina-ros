@@ -6,13 +6,21 @@
     list-style-type: none;
 }
 
-.nav-mobile {
-    display: flex;
-    background-color: #15ffbc;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: space-evenly;
+$main-color: #15ffbc;
+$color-fonts-hover: salmon;
 
+@mixin flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-evenly;
+    align-content: center;
+}
+
+.nav-mobile {
+    @include flex;
+    justify-content: space-between;
+    background-color: $main-color;
     &__elm {
         display: flex;
         margin: 20px;
@@ -34,7 +42,7 @@
     font-size: 15px;
 }
 main {
-    background-color: #15ffbc;
+    background-color: $main-color;
 }
 .main {
     width: 100%;
@@ -82,12 +90,9 @@ main {
     align-items: center;
 }
 .footer__header {
-    color: #15ffbc;
+    color: $main-color;
     .footer__header-title {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
+        @include flex;
         align-items: center;
         font-weight: lighter;
         font-family: oswald;
@@ -96,7 +101,7 @@ main {
         gap: 1rem;
         &--crossed {
             text-decoration: line-through;
-            text-decoration-color: salmon;
+            text-decoration-color: $color-fonts-hover;
         }
         &--equis {
             font-size: 10px;
@@ -113,9 +118,9 @@ main {
     margin-bottom: 30px;
     margin-top: 20px;
     &--velit {
-        color: salmon;
+        color: $color-fonts-hover;
         text-decoration: line-through;
-        text-decoration-color: salmon;
+        text-decoration-color: $color-fonts-hover;
     }
     & > a {
         text-decoration: none;
@@ -135,7 +140,7 @@ main {
     }
     &--green {
         text-align: center;
-        color: #15ffbc;
+        color: $main-color;
         padding: 30px;
     }
 }
@@ -148,9 +153,7 @@ main {
         font-weight: normal;
     }
     &--socialmedia {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include flex;
         align-content: space-between;
     }
 }
@@ -161,9 +164,7 @@ main {
 
 @media (min-width: 600px) {
     .nav-desktop {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include flex;
         align-items: center;
         align-content: space-between;
         gap: 20px;
@@ -171,24 +172,24 @@ main {
         font-family: oswald;
         color: black;
         letter-spacing: 5px;
-        background-color: #15ffbc;
+        background-color: $main-color;
     }
     .nav-desktop {
         .home:hover {
             cursor: pointer;
-            color: salmon;
+            color: $color-fonts-hover;
         }
         .works:hover {
             cursor: pointer;
-            color: salmon;
+            color: $color-fonts-hover;
         }
         .about:hover {
             cursor: pointer;
-            color: salmon;
+            color: $color-fonts-hover;
         }
         .contacts:hover {
             cursor: pointer;
-            color: salmon;
+            color: $color-fonts-hover;
         }
         img {
             cursor: default;
@@ -208,9 +209,7 @@ main {
         justify-content: center;
     }
     .paragraphs {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include flex;
         align-content: space-between;
         padding: 20px;
         & > div > p {
@@ -224,9 +223,7 @@ main {
             letter-spacing: none;
         }
         .section-bottom {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+            @include flex;
             align-content: space-between;
             .footer__items1,
             .footer__items2 {
@@ -242,27 +239,27 @@ main {
             }
             .footer__items1--green:hover {
                 cursor: pointer;
-                color: salmon;
+                color: $color-fonts-hover;
             }
             .footer__items2--green:hover {
                 cursor: pointer;
-                color: salmon;
+                color: $color-fonts-hover;
             }
             .footer__items3--socialmedia {
                 cursor: pointer;
-                color: salmon;
+                color: $color-fonts-hover;
             }
             .footer__items4--green:hover {
                 cursor: pointer;
-                color: salmon;
+                color: $color-fonts-hover;
             }
             .footer__items5--green:hover {
                 cursor: pointer;
-                color: salmon;
+                color: $color-fonts-hover;
             }
             .footer__items6--green:hover {
                 cursor: pointer;
-                color: salmon;
+                color: $color-fonts-hover;
             }
         }
     }

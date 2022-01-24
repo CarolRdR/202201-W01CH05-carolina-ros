@@ -6,12 +6,21 @@
     list-style-type: none;
 }
 
-.nav-mobile {
+$main-color: #15ffbc;
+$color-fonts-hover: salmon;
+
+@mixin flex {
     display: flex;
-    background-color: #15ffbc;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: space-evenly;
+    align-content: center;
+}
+
+.nav-mobile {
+    @include flex;
+    justify-content: space-between;
+    background-color: $main-color;
 
     &__elm {
         display: flex;
@@ -34,7 +43,7 @@
     font-size: 15px;
 }
 main {
-    background-color: #15ffbc;
+    background-color: $main-color;
 }
 .main {
     width: 100%;
@@ -56,17 +65,16 @@ video {
     clip-path: polygon(0 31%, 100% 0%, 100% 69%, 0% 100%);
 }
 .lorem1 {
-    display: flex;
+    @include flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
     font-family: oswald;
     letter-spacing: 5px;
     text-transform: uppercase;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
 }
 .lorem-ipsum__amet {
-    display: flex;
+    @include flex;
     text-align: center;
     justify-content: space-evenly;
     align-items: center;
@@ -78,11 +86,10 @@ video {
 }
 
 .lorem2-words {
-    display: flex;
-    text-transform: uppercase;
-    justify-content: center;
+    @include flex;
     align-items: center;
     flex-direction: column;
+    text-transform: uppercase;
 
     &__ipsum2 {
         font-family: oswald;
@@ -98,13 +105,11 @@ video {
 }
 .lorem3 {
     .p-lorem {
-        display: flex;
+        @include flex;
+        align-items: center;
         font-family: oswald;
         font-size: 12px;
         letter-spacing: 3px;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
         transform: rotate(-16deg);
         padding-bottom: 40px;
     }
@@ -117,12 +122,9 @@ video {
     align-items: center;
 }
 .footer__header {
-    color: #15ffbc;
+    color: $main-color;
     .footer__header-title {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
+        @include flex;
         align-items: center;
         font-weight: lighter;
         font-family: oswald;
@@ -131,7 +133,7 @@ video {
         gap: 1rem;
         &--crossed {
             text-decoration: line-through;
-            text-decoration-color: salmon;
+            text-decoration-color: $color-fonts-hover;
         }
         &--equis {
             font-size: 10px;
@@ -148,9 +150,9 @@ video {
     margin-bottom: 30px;
     margin-top: 20px;
     &--velit {
-        color: salmon;
+        color: $color-fonts-hover;
         text-decoration: line-through;
-        text-decoration-color: salmon;
+        text-decoration-color: $color-fonts-hover;
     }
     & > a {
         text-decoration: none;
@@ -170,7 +172,7 @@ video {
     }
     &--green {
         text-align: center;
-        color: #15ffbc;
+        color: $main-color;
         padding: 30px;
     }
 }
@@ -183,9 +185,7 @@ video {
         font-weight: normal;
     }
     &--socialmedia {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include flex;
         align-content: space-between;
     }
 }
@@ -196,9 +196,7 @@ video {
 
 @media (min-width: 600px) {
     .nav-desktop {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include flex;
         align-items: center;
         align-content: space-between;
         gap: 20px;
@@ -206,24 +204,24 @@ video {
         font-family: oswald;
         color: black;
         letter-spacing: 5px;
-        background-color: #15ffbc;
+        background-color: $main-color;
     }
     .nav-desktop {
         .home:hover {
             cursor: pointer;
-            color: salmon;
+            color: $color-fonts-hover;
         }
         .works:hover {
             cursor: pointer;
-            color: salmon;
+            color: $color-fonts-hover;
         }
         .about:hover {
             cursor: pointer;
-            color: salmon;
+            color: $color-fonts-hover;
         }
         .contacts:hover {
             cursor: pointer;
-            color: salmon;
+            color: $color-fonts-hover;
         }
         img {
             cursor: default;
@@ -232,20 +230,18 @@ video {
     .lorem2-words {
         &__dolor:hover {
             cursor: pointer;
-            color: salmon;
+            color: $color-fonts-hover;
         }
     }
     .lorem3 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include flex;
         text-align: center;
         padding-bottom: 20px;
     }
     .lorem3-images {
         .p-lorem:hover {
             cursor: pointer;
-            color: salmon;
+            color: $color-fonts-hover;
         }
         & > img:hover {
             cursor: pointer;
@@ -260,9 +256,7 @@ video {
             letter-spacing: none;
         }
         .section-bottom {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+            @include flex;
             align-content: space-between;
             .footer__items1,
             .footer__items2 {
@@ -278,27 +272,27 @@ video {
             }
             .footer__items1--green:hover {
                 cursor: pointer;
-                color: salmon;
+                color: $color-fonts-hover;
             }
             .footer__items2--green:hover {
                 cursor: pointer;
-                color: salmon;
+                color: $color-fonts-hover;
             }
             .footer__items3--socialmedia {
                 cursor: pointer;
-                color: salmon;
+                color: $color-fonts-hover;
             }
             .footer__items4--green:hover {
                 cursor: pointer;
-                color: salmon;
+                color: $color-fonts-hover;
             }
             .footer__items5--green:hover {
                 cursor: pointer;
-                color: salmon;
+                color: $color-fonts-hover;
             }
             .footer__items6--green:hover {
                 cursor: pointer;
-                color: salmon;
+                color: $color-fonts-hover;
             }
         }
     }
