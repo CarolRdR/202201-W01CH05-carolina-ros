@@ -164,6 +164,10 @@ video {
   text-decoration: line-through;
   text-decoration-color: salmon;
 }
+.footer-words > a {
+  text-decoration: none;
+  color: white;
+}
 
 .footer__items1--title,
 .footer__items2--title,
