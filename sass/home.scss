@@ -6,9 +6,12 @@
     list-style-type: none;
 }
 
+$main-color: #15ffbc;
+$color-fonts-hover: salmon;
+
 .nav-mobile {
     display: flex;
-    background-color: #15ffbc;
+    background-color: $main-color;
     flex-direction: row;
     justify-content: space-between;
     align-items: space-evenly;
@@ -34,7 +37,7 @@
     font-size: 15px;
 }
 main {
-    background-color: #15ffbc;
+    background-color: $main-color;
 }
 .main {
     width: 100%;
@@ -117,7 +120,7 @@ video {
     align-items: center;
 }
 .footer__header {
-    color: #15ffbc;
+    color: $main-color;
     .footer__header-title {
         display: flex;
         flex-direction: row;
@@ -131,7 +134,7 @@ video {
         gap: 1rem;
         &--crossed {
             text-decoration: line-through;
-            text-decoration-color: salmon;
+            text-decoration-color: $color-fonts-hover;
         }
         &--equis {
             font-size: 10px;
@@ -148,9 +151,9 @@ video {
     margin-bottom: 30px;
     margin-top: 20px;
     &--velit {
-        color: salmon;
+        color: $color-fonts-hover;
         text-decoration: line-through;
-        text-decoration-color: salmon;
+        text-decoration-color: $color-fonts-hover;
     }
     & > a {
         text-decoration: none;
@@ -170,7 +173,7 @@ video {
     }
     &--green {
         text-align: center;
-        color: #15ffbc;
+        color: $main-color;
         padding: 30px;
     }
 }
@@ -206,24 +209,24 @@ video {
         font-family: oswald;
         color: black;
         letter-spacing: 5px;
-        background-color: #15ffbc;
+        background-color: $main-color;
     }
     .nav-desktop {
         .home:hover {
             cursor: pointer;
-            color: salmon;
+            color: $color-fonts-hover;
         }
         .works:hover {
             cursor: pointer;
-            color: salmon;
+            color: $color-fonts-hover;
         }
         .about:hover {
             cursor: pointer;
-            color: salmon;
+            color: $color-fonts-hover;
         }
         .contacts:hover {
             cursor: pointer;
-            color: salmon;
+            color: $color-fonts-hover;
         }
         img {
             cursor: default;
@@ -232,7 +235,7 @@ video {
     .lorem2-words {
         &__dolor:hover {
             cursor: pointer;
-            color: salmon;
+            color: $color-fonts-hover;
         }
     }
     .lorem3 {
@@ -245,7 +248,7 @@ video {
     .lorem3-images {
         .p-lorem:hover {
             cursor: pointer;
-            color: salmon;
+            color: $color-fonts-hover;
         }
         & > img:hover {
             cursor: pointer;
@@ -278,27 +281,27 @@ video {
             }
             .footer__items1--green:hover {
                 cursor: pointer;
-                color: salmon;
+                color: $color-fonts-hover;
             }
             .footer__items2--green:hover {
                 cursor: pointer;
-                color: salmon;
+                color: $color-fonts-hover;
             }
             .footer__items3--socialmedia {
                 cursor: pointer;
-                color: salmon;
+                color: $color-fonts-hover;
             }
             .footer__items4--green:hover {
                 cursor: pointer;
-                color: salmon;
+                color: $color-fonts-hover;
             }
             .footer__items5--green:hover {
                 cursor: pointer;
-                color: salmon;
+                color: $color-fonts-hover;
             }
             .footer__items6--green:hover {
                 cursor: pointer;
-                color: salmon;
+                color: $color-fonts-hover;
             }
         }
     }
