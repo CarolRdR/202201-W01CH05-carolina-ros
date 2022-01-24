@@ -9,13 +9,18 @@
 $main-color: #15ffbc;
 $color-fonts-hover: salmon;
 
-.nav-mobile {
+@mixin flex {
     display: flex;
-    background-color: $main-color;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: space-evenly;
+    align-content: center;
+}
 
+.nav-mobile {
+    @include flex;
+    justify-content: space-between;
+    background-color: $main-color;
     &__elm {
         display: flex;
         margin: 20px;
@@ -87,10 +92,7 @@ main {
 .footer__header {
     color: $main-color;
     .footer__header-title {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
+        @include flex;
         align-items: center;
         font-weight: lighter;
         font-family: oswald;
@@ -151,9 +153,7 @@ main {
         font-weight: normal;
     }
     &--socialmedia {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include flex;
         align-content: space-between;
     }
 }
@@ -164,9 +164,7 @@ main {
 
 @media (min-width: 600px) {
     .nav-desktop {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include flex;
         align-items: center;
         align-content: space-between;
         gap: 20px;
@@ -211,9 +209,7 @@ main {
         justify-content: center;
     }
     .paragraphs {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include flex;
         align-content: space-between;
         padding: 20px;
         & > div > p {
@@ -227,9 +223,7 @@ main {
             letter-spacing: none;
         }
         .section-bottom {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+            @include flex;
             align-content: space-between;
             .footer__items1,
             .footer__items2 {
